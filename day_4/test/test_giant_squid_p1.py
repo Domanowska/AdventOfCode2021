@@ -1,8 +1,8 @@
-from puzzle_p1 import get_score_of_winning_board, get_score_of_last_winning_board
+from day_4.giant_squid_p1 import get_score_of_winning_board
 
 
 def test_get_score_of_winning_board():
-    with open("test/sample_input.txt", "r") as file:
+    with open("day_4/test/sample_input.txt", "r") as file:
         called_nums = list(map(int, file.readline().split(',')))
         # Next line will be empty to just get rid of it
         file.readline()
